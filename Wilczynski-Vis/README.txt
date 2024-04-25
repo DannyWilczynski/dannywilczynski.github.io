@@ -1,0 +1,1 @@
+To run the visualizations, simply open the Wilczynski.html file. All of the data has already been processed and stored locally.

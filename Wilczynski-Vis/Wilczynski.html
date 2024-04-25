@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>project 2</title>
+  <link href="wilczynski.css" type="text/css" rel="stylesheet">
+  <script src='https://d3js.org/d3.v7.min.js'></script>
+  <script src="Data.js"></script>
+</head>
+
+<body>
+
+
+  <h1>Danny Wilczynski</h1>
+  <div class="vis_desc">
+    Interactive data visualization for this dataset of data science jobs and salaries. 
+    <br/>
+    <a href="https://www.kaggle.com/datasets/abhinavshaw09/data-science-job-salaries-2024">https://www.kaggle.com/datasets/abhinavshaw09/data-science-job-salaries-2024</a>
+  </div>
+  
+  <br/><br/>
+
+  <div class="bar-container">
+    <div class="stacked-bar-div">
+      <div class="vis_label">Experience vs. Salary range</div>
+      <div class="vis_upper_desc">Click the "Change Scale" button to normalize the bars. Colors represent how many</div>
+      <div class="vis_desc">jobs have a salary in the corresponding salary range for each experience level.</div>
+      <br/>
+      <div class="chart">
+        <button id="toggleNormalization" class="normalize-button">Change Scale</button>
+        <div id="stacked-bar" ></div>
+
+        <div class="color-container">
+          <div class="color-legend color0" > $0-39,999 </div>
+          <div class="color-legend color1" > $40,000-69,999 </div>
+          <div class="color-legend color2" > $70,000-99,999 </div>
+          <div class="color-legend color3" > $100,000-139,999 </div>
+          <div class="color-legend color4" > $140,000-199,999 </div>
+          <div class="color-legend color5" > $200,000-299,999 </div>
+          <div class="color-legend color6" > $300,000+ </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hist-div">
+      <div class="vis_label">Remote Salary vs. In Person Salary</div>
+      <div class="vis_upper_desc">Blue bars represent in person jobs while red bars represent fully remote jobs. </div>
+      <div class="vis_desc">Hover over a bar to see more details. </div>
+      <div class="histogram">
+
+        
+        <svg class = "histogram-svg chart" width="600" height="400"></svg>
+        <div style="height: 10px;"></div>
+        <div class="histogram-tooltip"></div>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br><br>
+
+
+  
+  <div class="pie-container">
+    <div class="pie">
+      <div class="vis_label">Small Companies</div>
+      <div class="vis_desc">Company has less than 50 employees</div>
+      <svg class="chart" id="small-pie"></svg>
+    </div>
+
+    <div class="pie">
+      <div class="vis_label">Medium Companies</div>
+      <div class="vis_desc">Company has between 50 and 250 employees</div>
+      <svg class="chart" id="medium-pie"></svg>
+    </div>
+
+    <div class="pie">
+      <div class="vis_label">Large Companies</div>
+      <div class="vis_desc">Company has more than 250 employees</div>
+      <svg class="chart" id="large-pie"></svg>
+    </div>
+
+  </div>
+  <div style="height: 200px;"></div>
+
+
+  <script src="experience-size.js"></script>
+  <script src="salary-range.js"></script>
+  <script src="remote-pay.js"></script> 
+</body>
