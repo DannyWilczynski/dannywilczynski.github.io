@@ -17,8 +17,7 @@ body{
   justify-content: space-between;
   width: auto;
   height: 74px;
-  background-color: #b8e0d2;
-  background-color: #9db7e4;
+  background-color: #c5d8f6;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +42,7 @@ body{
     cursor: pointer;
     border-radius: 6px;
     border: 1px solid #838383;
+    padding: 3px 8px;
     
   }
   .bar {
@@ -57,7 +57,6 @@ body{
   * Hamburger menu and dropdown for smaller devices
   */
   .hamburger-menu {
-    background-color: #6a0bf0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -78,9 +77,6 @@ body{
     padding: 10px;
     border-radius: 5px;
   }
-  .hamburger-nav:active{
-    color: #d6eadf;
-  }
 
   /***************************************
   * Show hamburger menu for small screens
@@ -91,8 +87,8 @@ body{
     }
     .hamburger-menu {
       flex-direction: column;
-      background-color: #d6eadf;
-      position: absolute;;
+      background-color: #d7e3f6; 
+      position: absolute;
       top: 84px;
       left: 0;
       border-bottom-left-radius:  10px;
@@ -132,11 +128,19 @@ body{
 
 
 
+
+
+
+
+  
+
+
 /*************************************************
 * main body content 
 */
 .content {
-  padding-top: 60px;
+  padding-top: 80px;
+  /* margin-top: 100px; */
   width: 100%;
 }
   /*****************************
@@ -154,7 +158,8 @@ body{
     justify-content: space-around;
     padding-left: 35px;
     padding-right: 35px;
-    margin-bottom: 60px
+    margin-bottom: 60px;
+    margin-top: 30px;
   }
   .content-lines{
     display: flex;
@@ -165,26 +170,19 @@ body{
   }
   .content-divider{
     border-radius: 2px;
-    width: 95%;
-    background-color: #9d9d9d;
+    width: 92%;
+    background-color: #b2b0b0;
     height: 2px;
     margin: 4 auto;
   }
-  .resume{
-    background-color: #ff00ff;
-  }
   .about{
     background-color: #CEDDE9;
-
   }
   .education{
     background-color: #eee4e6;
-
   }
-
   .experience{
     background-color: #edebd7;
-
   }
   .images-div{
     display: flex;
@@ -207,6 +205,9 @@ body{
   }
 
   @media screen and (max-width: 800px) {
+    .content {
+      padding-top: 30px;
+    }
     .images-tall{
       max-width: 80vw;
     }
@@ -222,7 +223,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    margin-top: 30px;
 
   }
   .form-name-email{
@@ -241,7 +242,7 @@ body{
 
   .input-text{
     padding: 12px 8px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 6px 0px;
     border-radius: 10px;
     border-width: 1px;
@@ -259,6 +260,7 @@ body{
     font-size: 26px;
     font-weight: bold;
     border-radius: 10px;
+    background-color: #f6f5ff;
     border: 1px solid #000000;
   }
 
