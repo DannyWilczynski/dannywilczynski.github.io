@@ -1,8 +1,7 @@
 body{
   font-family:Arial;
   margin:0px;
-  background-color:#95b8d1 ;
-  background-color:#CEDDE9 ;
+  background-color:#c5d8f6 ;
   overflow-x: hidden;
 }
 
@@ -140,7 +139,6 @@ body{
 */
 .content {
   padding-top: 80px;
-  /* margin-top: 100px; */
   width: 100%;
 }
   /*****************************
@@ -260,7 +258,6 @@ body{
     font-size: 26px;
     font-weight: bold;
     border-radius: 10px;
-    background-color: #f6f5ff;
     border: 1px solid #000000;
   }
 
